@@ -18,7 +18,7 @@
 </style>
   <script>
 /* Regavise public FDA data explorer. No model inference or automated regulatory conclusions. */
-(() => {
+document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.mobile-menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
   menuToggle?.addEventListener('click', () => {
@@ -164,8 +164,7 @@
     input.value=button.dataset.code;
     runLookup();
   }));
-})();
-
+});
 </script>
 </head>
 <body>
